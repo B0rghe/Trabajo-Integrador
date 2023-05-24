@@ -1,5 +1,5 @@
 function calcularPrecio() {
-    var cantidadTickets,
+    var cantidadTickets = parseInt(document.getElementById('inputCantidad').value, 10),
         precioTotal,
         categoria,
         precioEstudiante,
@@ -28,6 +28,7 @@ function calcularPrecio() {
               precioTotal = precioGeneral * cantidadTickets;
               break;
         }
+        precioTotal = parseFloat(precioEstudiante * cantidadTickets).toFixed(2);
         document.getElementById('importeTotal').innerHTML = 'Total a Pagar: $' + precioTotal;
     } else { if (cantidadTickets == 0) {
                 window.alert('Ingrese la cantidad de entradas');
