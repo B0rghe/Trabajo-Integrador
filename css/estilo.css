@@ -9,45 +9,40 @@ main {
     background-color: #3e4349;
 }
 
-.c-green {
-    color: #29be49;
-}
+/*Portada de pagina de inicio*/
 
 .portada{
-    background-image: url(../images/ba1.jpg);
-    background-color: rgba(0,0,0,0.5);
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-}
-.portada::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.textoPortada {
-    z-index: 1;
     color: white;
+    font-size: 1.2em;
+    height: 600px;
+}
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.portada img {
+    transition: 0.5s opacity;
+    height: 600px;
+}
+.portada:hover img {
+    opacity: 0.7;
+}
+.contenedorPortada {
+    position: relative;
+    bottom: -35%;
     text-align: end;
     display: flex;
     flex-wrap: wrap;
     align-items: end;
     flex-direction: column;
+}
+.portadaTexto {
+    position: relative;
+    bottom: -35%;
     margin-right: 10%;
 }
-.textoPortada p {
-    width: 40%;
-}
+
+/*Contenedor de Oradores*/
+
 .container {
     position: relative;
     display: block;
@@ -62,9 +57,9 @@ main {
     text-align: center;
     font-size: 6vh;
 }
-.enviar {
-    background-color: #93d325;
-}
+
+/*Footer*/
+
 footer {
     background-color: #244a5f;
     margin-top: 1rem;
@@ -72,4 +67,15 @@ footer {
 
 footer .bg-cr {
     background-color: rgb(0, 0, 0);
+}
+
+/*Compra de tickets*/
+
+.contenedorTickets{
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.tarjetasTickets {
+    padding-top: 30px;
 }
